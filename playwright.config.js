@@ -12,6 +12,11 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
+//timeout: 15000, // Add timeout to execute code
+expect: {
+timeout: 2000 //  timeout for asseration failure 
+},
+
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -23,7 +28,17 @@ module.exports = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+   
   use: {
+    video: 'retain-on-failure', // Record video on failure event
+
+    screenshot: 'only-on-failure', // Capture screenshot on Failure Event only
+    launchOptions: {
+      slowMo: 1000 // This will slow down each test interaction by 1 second
+
+    },
+
+
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 

@@ -9,6 +9,6 @@
   "scripts": {
 
     
-    "test":"npx playwright test testSuite.spec --headed"
+    "test":"npx playwright test secondAssignment.spec.js --headed"
   }
 }

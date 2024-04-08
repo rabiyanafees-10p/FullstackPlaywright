@@ -9,12 +9,12 @@ test.describe('My test suite', () => {
     await page.locator('input[name="username"]').fill("Admin");
     await page.locator('//input[@class="oxd-input oxd-input--active"]').fill('admin123');
     await page.click('button[type="submit"].oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button');
-
+    await page.waitForTimeout(12000);
     await page.waitForSelector('text=Dashboard');
 });
 
 
-  test.only('Sync. Case 2', async ({ page }) => {
+  test('Sync. Case 2', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await expect(page).toHaveTitle('OrangeHRM');
     await page.click('input[name="username"]');
