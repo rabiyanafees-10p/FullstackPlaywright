@@ -18,7 +18,7 @@ const month = data.month;
 const year = data.year;
 
 test('Place Order', async ({ page }) => {
-    const login = new LoginPage(page); // Corrected login
+    const login = new LoginPage(page); 
     const home = new HomePage(page);
     const addToCartLink = await home.clickAddToCartLink();
     const cart = new Cart(page);
@@ -34,19 +34,16 @@ test('Place Order', async ({ page }) => {
 
     //await expect(page.getByRole('link', { name: 'Add to cart' })).toBeVisible();
     await addToCartLink.click();
-    /*await Promise.all([
-        expect(page.getByRole('link', { name: 'Add to cart' })).toBeVisible(),
-        addToCartLink.click()
-    ]);*/
+
 
 
     try {
-        // Try to close the dialog if it appears
-        const dialog = await page.waitForEvent('dialog', { timeout: 5000 }); // Adjust timeout as needed
+        
+        const dialog = await page.waitForEvent('dialog', { timeout: 5000 }); 
         console.log('Dialog message:', dialog.message());
         await dialog.accept();
     } catch (error) {
-        // If dialog does not appear, continue with next step
+       
         console.log('Dialog did not appear, proceeding with next step...');
     }
 
