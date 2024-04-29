@@ -12,7 +12,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
-//timeout: 15000, // Add timeout to execute code
+timeout: 15000, // Add timeout to execute code
 expect: {
 timeout: 2000 //  timeout for asseration failure 
 },
@@ -26,9 +26,10 @@ timeout: 2000 //  timeout for asseration failure
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+ // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-   
+  
+  reporter : [['allure-playwright', {outputFolder:'allure-results'}]],
   use: {
     video: 'retain-on-failure', // Record video on failure event
 

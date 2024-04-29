@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('My test suite', () => {
 
-  test.beforeEach('Sync. Case 1', async ({ page }) => {
+  test.beforeEach('Login case', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', { timeout: 130000 });
     //await page.waitForTimeout(150000);
     await page.click('input[name="username"]');
