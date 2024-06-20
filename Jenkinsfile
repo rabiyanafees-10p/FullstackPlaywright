@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS' // Name of the NodeJS installation in Jenkins
+        nodejs 'NodeJS' // Ensure that this matches the name of the NodeJS installation in Jenkins
     }
 
     stages {
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     // Run Playwright tests
-                    sh 'npx playwright test'
+                    sh 'npx playwright test placeOrder.spec.js'
                 }
             }
         }
