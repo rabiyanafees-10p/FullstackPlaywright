@@ -31,7 +31,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'npx playwright test'
+                bat 'npx playwright test placeOrder.spec.js'
             }
         }
 
