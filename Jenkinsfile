@@ -1,18 +1,8 @@
 pipeline {
     agent any
 
-  /*  tools {
+    tools {
         nodejs 'NodeJS' // Ensure this matches the NodeJS installation name in Jenkins
-    }
-    
-        environment {
-        PATH = "${tool 'NodeJS'}/bin:${env.PATH}"
-    }
-
-*/
-
-  tools {
-        nodejs 'NodeJS'
     }
 
     environment {
@@ -27,8 +17,6 @@ pipeline {
             }
         }
 
-
-    stages {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright'
