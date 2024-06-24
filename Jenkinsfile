@@ -12,8 +12,8 @@ pipeline {
     stages {
         stage('Verify NodeJS and npm') {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
+                bat 'node -v'
+                bat 'npm -v'
             }
         }
 
@@ -25,13 +25,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npx playwright test'
+                bat 'npx playwright test'
             }
         }
 
