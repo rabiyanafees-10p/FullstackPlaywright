@@ -1,13 +1,32 @@
 pipeline {
     agent any
 
-    tools {
+  /*  tools {
         nodejs 'NodeJS' // Ensure this matches the NodeJS installation name in Jenkins
+    }
+    
+        environment {
+        PATH = "${tool 'NodeJS'}/bin:${env.PATH}"
+    }
+
+*/
+
+  tools {
+        nodejs 'NodeJS'
     }
 
     environment {
         PATH = "${tool 'NodeJS'}/bin:${env.PATH}"
     }
+
+    stages {
+        stage('Verify NodeJS and npm') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
+            }
+        }
+
 
     stages {
         stage('Checkout') {
