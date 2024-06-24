@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     // Install project dependencies
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     // Run Playwright tests
-                    sh 'npx playwright test placeOrder.spec.js'
+                    bat 'npx playwright test placeOrder.spec.js'
                 }
             }
         }
