@@ -5,6 +5,10 @@ pipeline {
         nodejs 'NodeJS' // Ensure this matches the NodeJS installation name in Jenkins
     }
 
+    environment {
+        PATH = "${tool 'NodeJS'}/bin:${env.PATH}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
