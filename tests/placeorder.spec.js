@@ -4,7 +4,7 @@ import { HomePage } from '../pages/homePage';
 import { Cart } from '../pages/cart';
 import { PlaceOrder } from '../pages/placeOrder';
 import { LogoutPage } from '../pages/logoutPage';
-import * as data from '../testData/testData.json';
+import* as data from '../testData.json'
 
 const username = data.user_name;
 const password = data.password;
@@ -18,16 +18,16 @@ const month = data.month;
 const year = data.year;
 
 test('Place Order', async ({ page }) => {
-    const login = new LoginPage(page); 
+    const login = new LoginPage(page);
     const home = new HomePage(page);
     const addToCartLink = await home.clickAddToCartLink();
     const cart = new Cart(page);
     const placeOrder = new PlaceOrder(page);
     const logout = new LogoutPage(page);
-    
-    
+
+
     await login.gotoLoginPage();
-    await login.login(username,password);
+    await login.login(username, password);
 
     await home.selectCategory(category);
     await home.selectItem(product);
@@ -35,15 +35,14 @@ test('Place Order', async ({ page }) => {
     //await expect(page.getByRole('link', { name: 'Add to cart' })).toBeVisible();
     await addToCartLink.click();
 
-
-
-    try {
-        
-        const dialog = await page.waitForEvent('dialog', { timeout: 5000 }); 
+try {
+        const dialog = await page.waitForEvent('dialog', { timeout: 5000 });
         console.log('Dialog message:', dialog.message());
         await dialog.accept();
-    } catch (error) {
-       
+    }
+
+    catch (error) {
+
         console.log('Dialog did not appear, proceeding with next step...');
     }
 
