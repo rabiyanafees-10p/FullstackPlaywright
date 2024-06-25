@@ -29,7 +29,11 @@ timeout: 2000 //  timeout for asseration failure
  // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   
-  reporter : [['allure-playwright', {outputFolder:'allure-results'}]],
+  /*reporter : [['allure-playwright', {outputFolder:'allure-results'}]],*/
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: 'playwright-report', open: 'never' }]
+],
   use: {
     video: 'retain-on-failure', // Record video on failure event
 
