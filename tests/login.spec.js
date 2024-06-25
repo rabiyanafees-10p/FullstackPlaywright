@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
-import * as data from '../testData/testData.json';
+import * as data from '../testData.json';
 
 
 const validUsername = data.user_name;

@@ -4,7 +4,7 @@ import { HomePage } from '../pages/homePage';
 import { Cart } from '../pages/cart';
 import { PlaceOrder } from '../pages/placeOrder';
 import { LogoutPage } from '../pages/logoutPage';
-import* as data from '../testData.json'
+import * as data from '../testData.json';
 
 const username = data.user_name;
 const password = data.password;
