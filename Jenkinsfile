@@ -29,6 +29,13 @@ pipeline {
             }
         }
 
+        stage('Copy testData.json') {
+            steps {
+                // Copy testData.json from local directory to Jenkins workspace
+                bat 'xcopy /Y D:\\Automation\\FullstackPlaywright\\testData.json .'
+            }
+        }
+
         stage('Run Tests') {
             steps {
                 bat 'npx playwright test placeOrder.spec.js'
