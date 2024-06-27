@@ -19,7 +19,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git' // Add .git at the end of URL
+                git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git'
             }
         }
 
