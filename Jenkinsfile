@@ -60,6 +60,7 @@ pipeline {
         always {
             // Ensure the 'always' post condition is within a 'node' block
             node {
+                // Any additional steps needed after running tests
                 cleanWs()
             }
         }
