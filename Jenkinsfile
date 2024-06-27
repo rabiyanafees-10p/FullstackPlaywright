@@ -16,7 +16,12 @@ pipeline {
                 bat 'npm -v'
             }
         }
-
+stage('Copy testData.json') {
+            steps {
+                // Copy testData.json from local directory to Jenkins workspace
+                bat 'xcopy /Y D:\\Automation\\FullstackPlaywright\testData.json'
+            }
+        }
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git' // Add .git at the end of URL
