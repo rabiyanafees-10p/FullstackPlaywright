@@ -19,20 +19,13 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git'
+                git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git' // Add .git at the end of URL
             }
         }
 
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
-            }
-        }
-
-        stage('Copy testData.json') {
-            steps {
-                // Copy testData.json from local directory to Jenkins workspace
-                bat 'xcopy /Y D:\\Automation\\FullstackPlaywright\\testData.json .'
             }
         }
 
@@ -58,11 +51,7 @@ pipeline {
 
     post {
         always {
-            // Ensure the 'always' post condition is within a 'node' block
-            node {
-                // Any additional steps needed after running tests
-                cleanWs()
-            }
+            cleanWs()
         }
     }
 }
