@@ -32,7 +32,7 @@ pipeline {
         stage('Copy testData.json') {
             steps {
                 // Copy testData.json from local directory to Jenkins workspace
-                bat 'xcopy /Y D:\\Automation\\FullstackPlaywright\testData.json .'
+                bat 'xcopy /Y D:\\Automation\\FullstackPlaywright\\testData.json .'
             }
         }
 
@@ -58,7 +58,8 @@ pipeline {
 
     post {
         always {
-            node { // Ensure the 'always' post condition is within a 'node' block
+            // Ensure the 'always' post condition is within a 'node' block
+            node {
                 cleanWs()
             }
         }
