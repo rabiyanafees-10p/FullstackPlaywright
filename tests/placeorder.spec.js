@@ -35,16 +35,16 @@ test('Place Order', async ({ page }) => {
     //await expect(page.getByRole('link', { name: 'Add to cart' })).toBeVisible();
     await addToCartLink.click();
 
-try {
-        const dialog = await page.waitForEvent('dialog', { timeout: 5000 });
-        console.log('Dialog message:', dialog.message());
-        await dialog.accept();
-    }
+    /*try {
+            const dialog = await page.waitForEvent('dialog', { timeout: 5000 });
+            console.log('Dialog message:', dialog.message());
+            await dialog.accept();
+        }
 
-    catch (error) {
+        catch (error) {
 
-        console.log('Dialog did not appear, proceeding with next step...');
-    }
+            console.log('Dialog did not appear, proceeding with next step...');
+        }*/
 
     await cart.goToCart();
 
