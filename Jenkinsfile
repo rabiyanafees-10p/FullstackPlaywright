@@ -40,9 +40,12 @@ pipeline {
             steps {
                 archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
                 publishHTML(target: [
+                    reportName: 'Playwright Test Report',
                     reportDir: 'playwright-report',
                     reportFiles: 'index.html',
-                    reportName: 'Playwright Test Report'
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
                 ])
             }
         }
