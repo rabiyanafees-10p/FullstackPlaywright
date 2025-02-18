@@ -1,9 +1,8 @@
-
-exports.PlaceOrder 
-    = class PlaceOrder {
+export class PlaceOrder {
     constructor(page) {
         this.page = page;
 
+        // Define locators
         this.name = this.page.locator('//*[@id="name"]');
         this.country = this.page.getByLabel('Country:');
         this.city = this.page.getByLabel('City:');
@@ -14,23 +13,19 @@ exports.PlaceOrder
 
     async placeOrder() {
         await this.page.getByRole('button', { name: 'Place Order' }).click();
-       
     }
 
-
-    async userDetail(username, Country, City, cardNumber, month, year) {
+    async userDetail(username, country, city, cardNumber, month, year) {
         await this.name.fill(username);
-        await this.country.fill(Country);
-        await this.city.fill(City);
+        await this.country.fill(country);
+        await this.city.fill(city);
         await this.card.fill(cardNumber);
         await this.month.fill(month);
         await this.year.fill(year);
         await this.page.getByRole('button', { name: 'Purchase' }).click();
-     
     }
 
-    async sucessmessgae (){
-        await this. page.getByRole('button', { name: 'OK' }).click();
+    async successMessage() {
+        await this.page.getByRole('button', { name: 'OK' }).click();
     }
 }
-

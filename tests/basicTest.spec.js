@@ -1,8 +1,13 @@
 import { test, expect } from '@playwright/test';
+import {runAccessibilityCheck} from '../utils/accessUtil';
 
-test('First Case', async ({ page }) => {
+//import { runAccessibilityCheck } from '../Accessibility/accessibilityUtil';
+//import { saveAccessibilityReport } from '../Accessibility/reportUtil';
+
+test.describe('OrangeHRM Accessibility Tests', () => {
+  test('First Case', async ({ page }) => {
     await page.goto('https://www.orangehrm.com/');
-  
-    // title
-    await expect(page).toHaveTitle('Human Resources Management Software | OrangeHRM');
+    //await expect(page).toHaveTitle('Human Resources Management Software | OrangeHRM');
+    await runAccessibilityCheck(page, 'Orange HRM');
   });
+});

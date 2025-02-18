@@ -1,0 +1,113 @@
+Error during accessibility check on Login Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Home Page: page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:51:16
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:31:71
+    at __awaiter (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:27:12)
+    at injectAxe (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:49:29)
+    at runAccessibilityCheck (D:\Automation\FullstackPlaywright\Accessibility\accessibilityUtil.js:7:15)
+    at D:\Automation\FullstackPlaywright\tests\placedOrder.spec.js:26:11 {
+  name: 'Error',
+  [Symbol(step)]: {
+    stepId: 'pw:api@15',
+    location: {
+      file: 'D:\\Automation\\FullstackPlaywright\\node_modules\\axe-playwright\\dist\\index.js',
+      line: 51,
+      column: 16,
+      function: undefined
+    },
+    category: 'pw:api',
+    title: 'page.evaluate',
+    apiName: 'page.evaluate',
+    params: {
+      expression: '(axe) => window.eval(axe)',
+      isFunction: true,
+      arg: [Object]
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1734371962819,
+    error: {
+      message: 'Error: page.evaluate: Execution context was destroyed, most likely because of a navigation',
+      stack: 'Error: page.evaluate: Execution context was destroyed, most likely because of a navigation\n' +
+        '    at D:\\Automation\\FullstackPlaywright\\node_modules\\axe-playwright\\dist\\index.js:51:16\n' +
+        '    at D:\\Automation\\FullstackPlaywright\\node_modules\\axe-playwright\\dist\\index.js:31:71\n' +
+        '    at __awaiter (D:\\Automation\\FullstackPlaywright\\node_modules\\axe-playwright\\dist\\index.js:27:12)\n' +
+        '    at injectAxe (D:\\Automation\\FullstackPlaywright\\node_modules\\axe-playwright\\dist\\index.js:49:29)\n' +
+        '    at runAccessibilityCheck (D:\\Automation\\FullstackPlaywright\\Accessibility\\accessibilityUtil.js:7:15)\n' +
+        '    at D:\\Automation\\FullstackPlaywright\\tests\\placedOrder.spec.js:26:11',
+      cause: undefined
+    }
+  }
+}
+Error during accessibility check on Category Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Product Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Cart Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Cart Items Verification: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Place Order Page: AssertionError [ERR_ASSERTION]: 3 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 3,
+  expected: 0,
+  operator: 'strictEqual'
+}

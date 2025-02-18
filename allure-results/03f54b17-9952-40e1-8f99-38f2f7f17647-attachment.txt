@@ -1,0 +1,14 @@
+Accessibility check failed: AssertionError [ERR_ASSERTION]: 9 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 9,
+  expected: 0,
+  operator: 'strictEqual'
+}

@@ -1,4 +1,4 @@
-exports.Cart = class CartStatus {
+export class Cart {
     constructor(page) {
         this.page = page;
     }
@@ -6,9 +6,4 @@ exports.Cart = class CartStatus {
     async goToCart() {
         await this.page.getByRole('link', { name: 'Cart', exact: true }).click();
     }
-
-    
-
-
-
 }

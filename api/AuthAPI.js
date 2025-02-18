@@ -2,7 +2,7 @@ import { request } from '@playwright/test';
 
 class AuthAPI {
     constructor() {
-        this.baseURL = process.env.BASE_URL|| 'https://restful-booker.herokuapp.com' ;
+        this.baseURL = process.env.BASE_URL || 'https://restful-booker.herokuapp.com';
     }
 
     async authenticate(username, password) {

@@ -1,4 +1,4 @@
-exports.HomePage = class PageActions {
+export class HomePage {
     constructor(page) {
         this.page = page;
     }
@@ -8,14 +8,14 @@ exports.HomePage = class PageActions {
     }
 
     async selectItem(text) {
-        await this.page.click(`//a[contains(text(), "${text}")]`);[]
+        await this.page.click(`//a[contains(text(), "${text}")]`);
     }
 
     async clickAddToCartLink() {
         return await this.page.getByRole('link', { name: 'Add to cart' });
 
-        //Dialog box close
-        const dialog = await page.waitForEvent('dialog');
+        // Dialog box close
+        const dialog = await this.page.waitForEvent('dialog');
         console.log('Dialog message:', dialog.message());
         await dialog.accept();
     }
