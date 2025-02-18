@@ -1,9 +1,11 @@
-exports.LogoutPage = class LogoutPage {
+export class LogoutPage {
     constructor(page) {      
         this.page = page;
+        this.logoutLink = this.page.getByRole('link', { name: 'Log out' });
     }
-  
+
     async gotoLogoutPage() {
-        await this.page.getByRole('link', { name: 'Log out' }).click()
+        await this.logoutLink.waitFor({ state: 'visible' });
+        await this.logoutLink.click();
     }
 }

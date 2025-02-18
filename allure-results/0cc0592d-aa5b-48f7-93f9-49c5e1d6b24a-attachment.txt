@@ -1,0 +1,83 @@
+Error during accessibility check on Login Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Home Page after Login: AssertionError [ERR_ASSERTION]: 4 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 4,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Category Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Product Page: AssertionError [ERR_ASSERTION]: 5 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 5,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Cart Page: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Cart Items Verification: AssertionError [ERR_ASSERTION]: 6 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 0,
+  operator: 'strictEqual'
+}
+Error during accessibility check on Place Order Page: AssertionError [ERR_ASSERTION]: 3 accessibility violations were detected
+    at testResultDependsOnViolations (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\utils.js:16:26)
+    at D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:129:51
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Automation\FullstackPlaywright\node_modules\axe-playwright\dist\index.js:28:58) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 3,
+  expected: 0,
+  operator: 'strictEqual'
+}
