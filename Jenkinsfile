@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Run Web Tests') {
             steps {
-                bat 'npx playwright test placeOrder.spec.js'
+                bat 'npx playwright test placedOrder.spec.js'
             }
         }
         stage('Archive Test Results') {
