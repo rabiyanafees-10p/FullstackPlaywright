@@ -16,38 +16,26 @@ pipeline {
                 bat 'npm -v'
             }
         }
-
-        stage('Copy testData.json') {
-            steps {
-                // Copy testData.json from local directory to Jenkins workspace
-                bat 'xcopy /Y "D:\\Automation\\FullstackPlaywright\\testData.json" .'
-            }
-        }
-
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/rabiyanafees-10p/FullstackPlaywright.git'
             }
         }
-
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
             }
         }
-
         stage('Run API Tests') {
             steps {
-                bat 'npx playwright test tests/authApiTest.spec.js'
+                bat 'npx playwright test AuthapiTest.spec.js'
             }
         }
-
         stage('Run Web Tests') {
             steps {
-                bat 'npx playwright test tests/placeOrder.spec.js'
+                bat 'npx playwright test placeOrder.spec.js'
             }
         }
-
         stage('Archive Test Results') {
             steps {
                 archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
@@ -59,7 +47,6 @@ pipeline {
             }
         }
     }
-
     post {
         always {
             cleanWs()
