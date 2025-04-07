@@ -1,12 +1,16 @@
 {
-    "compilerOptions": {
-      "module": "ESNext",
-      "target": "ESNext",
-      "moduleResolution": "node",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    }
-  }
-  
+  "compilerOptions": {
+    "module": "ESNext",            // Use ES module system
+    "target": "ESNext",            // Set target to ESNext to enable modern features
+    "moduleResolution": "node",    // Use Node-style module resolution
+    "esModuleInterop": true,       // Enable interoperability between CommonJS and ES modules
+    "allowJs": true,               // Allow JavaScript files to be compiled
+    "strict": true,                // Enable strict type-checking options
+    "resolveJsonModule": true,     // Allow importing JSON files
+    "skipLibCheck": true           // Skip type-checking of declaration files
+  },
+  "include": [
+    "src/**/*",
+    "testData.ts"
+  ]
+}

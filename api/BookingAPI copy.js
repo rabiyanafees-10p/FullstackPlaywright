@@ -1,7 +1,7 @@
 import { request } from '@playwright/test';
 
 class BookingAPI {
-    constructor() { this.baseURL = process.env.BASE_URL || 'https://restful-booker.herokuapp.com';    }
+    constructor() {  this.baseURL = testData.api.baseURL;    }
 
     async createBooking(authToken, bookingData) {
         const requestContext = await request.newContext();

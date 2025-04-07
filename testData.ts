@@ -15,6 +15,8 @@ export const data = {
     },
     
     api: {
+
+      baseURL: "https://restful-booker.herokuapp.com",
       auth: {
         username: "admin",
         password: "password123"
@@ -35,8 +37,8 @@ export const data = {
         totalprice: 222,
         depositpaid: true,
         bookingdates: {
-          checkin: "2024-01-01",
-          checkout: "2024-01-01"
+            checkin: "2024-01-01",
+            checkout: "2024-01-01"
         },
         additionalneeds: "Test"
       }
