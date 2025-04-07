@@ -26,6 +26,11 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Install Playwright Browsers') {
+            steps {
+                bat 'npx playwright install'
+            }
+        }
         stage('Run API Tests') {
             steps {
                 bat 'npx playwright test AuthapiTest.spec.js'
