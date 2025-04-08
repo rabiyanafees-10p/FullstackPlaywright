@@ -1,0 +1,1 @@
+Booking with ID 4748 has been successfully deleted.

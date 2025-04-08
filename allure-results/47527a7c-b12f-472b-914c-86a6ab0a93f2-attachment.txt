@@ -1,0 +1,2 @@
+Booking with ID 329 has been successfully deleted.
+Booking ID 329 no longer exists (deleted).

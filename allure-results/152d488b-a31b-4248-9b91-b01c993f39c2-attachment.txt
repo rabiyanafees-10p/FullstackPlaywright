@@ -1,0 +1,2 @@
+Booking with ID 4505 has been successfully deleted.
+Booking ID 4505 no longer exists (deleted).

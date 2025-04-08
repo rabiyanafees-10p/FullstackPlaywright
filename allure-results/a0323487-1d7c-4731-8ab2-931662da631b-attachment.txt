@@ -1,0 +1,2 @@
+Booking with ID 2937 has been successfully deleted.
+Booking ID 2937 no longer exists (deleted).

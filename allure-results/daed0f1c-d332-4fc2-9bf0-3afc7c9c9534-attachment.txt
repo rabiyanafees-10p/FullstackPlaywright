@@ -1,0 +1,2 @@
+Delete Response: Forbidden
+Status Code: 403

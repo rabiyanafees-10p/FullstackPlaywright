@@ -1,0 +1,2 @@
+Booking with ID 328 has been successfully deleted.
+Booking ID 328 no longer exists (deleted).
