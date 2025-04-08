@@ -67,6 +67,7 @@ test.describe.serial('@api API Authentication Tests', () => {
 
     // Expecting a 404 error (not found) since the booking was deleted
     expect(response.status()).toBe(404);
+    console.log(`Booking ID ${bookingId} no longer exists (deleted).`);
     console.log(`Booking ID ${bookingId} is deleted`);
   });
 });
