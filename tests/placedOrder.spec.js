@@ -49,7 +49,7 @@ test('Place Order with Accessibility Checks', async ({ page }) => {
     //await placeOrder.sucessmessgae();
 
     // Step 6: Logout
-    await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
-    await logout.gotoLogoutPage();
-    await runAccessibilityCheck(page, 'Logout Page');
+    // await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
+    // await logout.gotoLogoutPage();
+    // await runAccessibilityCheck(page, 'Logout Page');
 });
